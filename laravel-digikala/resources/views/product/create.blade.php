@@ -36,6 +36,10 @@
     </div>
 
     <div class="form-group">
+        <span>عکس محصول</span>
+        <input type="file" name="img">
+    </div>
+    <div class="form-group">
         {!! Form::textArea('text',null,['class'=>'ckeditor']) !!}
         @if($errors->has('text'))
             <span style="color:red;font-size:13px">{{ $errors->first('text') }}</span>
