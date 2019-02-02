@@ -14,7 +14,7 @@ class AddOrderIdCloumnToOrderTable extends Migration
     public function up()
     {
         Schema::table('order', function (Blueprint $table) {
-            $table->string('order_id');
+            $table->string('order_id')->nullable();
         });
     }
 

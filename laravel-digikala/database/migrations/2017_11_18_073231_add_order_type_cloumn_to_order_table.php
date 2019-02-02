@@ -15,7 +15,7 @@ class AddOrderTypeCloumnToOrderTable extends Migration
     {
         Schema::table('order', function (Blueprint $table) {
 
-            $table->string('order_type');
+            $table->string('order_type')->nullable();
         });
     }
 
